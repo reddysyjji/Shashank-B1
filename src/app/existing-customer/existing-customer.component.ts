@@ -20,7 +20,7 @@ export class ExistingCustomerComponent {
     const storedName = localStorage.getItem(this.phoneNumber);
     if (storedName) {
       this.customerName = storedName;
-      this.message = `Welcome back, ${this.customerName}!`;
+      this.message = `Welcome back ${this.customerName}!`;
     } else {
       this.message = 'Customer not found.';
     }
