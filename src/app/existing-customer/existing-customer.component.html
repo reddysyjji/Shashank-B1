@@ -1,0 +1,13 @@
+<h2>Existing Customer</h2>
+
+<form (ngSubmit)="findCustomer()">
+  <label for="phoneNumber">Enter Your Phone Number:</label>
+  <input type="text" id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber" required>
+  
+  <button type="submit">Find</button>
+</form>
+
+<p>Registered Name: <strong>{{ customerName }}</strong></p>
+<p>{{ message }}</p>
+<p>Thank you</p>
+<button (click)="goHome()">Home</button>
