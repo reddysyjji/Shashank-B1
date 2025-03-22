@@ -2,12 +2,11 @@
 
 <form (ngSubmit)="findCustomer()">
   <label for="phoneNumber">Enter Your Phone Number:</label>
-  <input type="text" id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber" required>
+  <input type="text" id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber"required class="input-text">
   
-  <button type="submit">Find</button>
+  <button type="submit" class="Home-b">Find</button>
 </form>
 
-<p>Registered Name: <strong>{{ customerName }}</strong></p>
-<p>{{ message }}</p>
+<p class="WEL-text">{{ message }}</p>
 <p>Thank you</p>
-<button (click)="goHome()">Home</button>
+<button (click)="goHome()" class="Home-b">Home</button>
